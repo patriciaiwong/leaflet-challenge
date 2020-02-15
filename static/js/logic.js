@@ -61,8 +61,8 @@ function createFeatures(earthquakeData, plateData) {
     
     var plates = L.geoJSON(plateData, {
     style: function (feature) {
-        var latlngs = (feature.geometry.coordinates);
-        return L.polyline(latlngs, {color: 'red'});
+        var location = (feature.geometry.coordinates);
+        return L.polyline(location, {color: 'red'});
         }
     });
 
